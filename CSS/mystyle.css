@@ -1,5 +1,50 @@
-.banner {
+.banner { /* this is to aad background image */
   background: url(..//back.jpg)no-repeat;
   min-height: 700px;
   background-size: cover;
+}
+
+div{
+  background: red;
+  height: 100px;
+  width:150px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px black;
+}
+h2{
+  background: green;
+  height : 50px;
+  width:50px;
+  border-radius: 50%;
+}
+
+.shdw{ /* in this we care creating a square with a shadow */
+  background: green;
+  height: 100px;
+  width: 150px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px black;
+}
+#name{
+  background: red;
+  color: white;
+}
+h3{
+  background-color: cyan;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+
+table, th, td{
+  border: 2px solid green;
+  border-collapse: collapse;
+}
+/* if a shape is in square by adjusting order radius to 50% we can change it to circle   */
+/* if a shape is in rectangle by adjusting order radius to 50% we can change it to oval   */
+td{
+  padding: 10px;
+}
+td.c {
+  line-height: 0.8cm;
 }
