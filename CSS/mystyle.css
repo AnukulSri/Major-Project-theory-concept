@@ -1,0 +1,5 @@
+.banner {
+  background: url(..//back.jpg)no-repeat;
+  min-height: 700px;
+  background-size: cover;
+}
