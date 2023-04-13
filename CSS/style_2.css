@@ -1,0 +1,124 @@
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+}
+
+.circle1 {
+    background: red;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 0 0 20px black;
+animation-name: demo;
+animation-duration: 5s; 
+animation-iteration-count: infinite;
+animation-direction: right;   
+}
+@keyframes demo{
+    from{
+        background: red;
+        transform: scale(0.5);
+
+    }
+    to{
+        background: linear-gradient(90deg,red,blue); /* by using linear gradient we can set two or more colors in a single thing */
+        transform: scale(1);
+
+    }
+}
+
+.circle2 {
+    background: linear-gradient(90deg,yellow,cyan); 
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 20px;
+    box-shadow: 0 0 20px black;
+    animation: demo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+.container{ /*this tag is used  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main{/*Adding linear gradient in background*/
+    background:grey;
+    margin-top: 200px;
+    animation-name: demo_main;
+animation-iteration-count: infinite;
+animation-duration: 5s;
+animation-direction: right;
+
+}
+@keyframes demo_main{
+    from{
+        background: grey;
+    }
+    to{
+        background: linear-gradient(90deg,rgb(255, 174, 0),pink);
+    }
+}
+.sq{
+    background:red;
+    height: 50px;
+    width: 50px;
+    animation:demo3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes demo3{
+    from {
+        background: red;
+        transform: scale(0.5);
+        transform: rotate(360deg);
+    }
+    to{
+        background:brown;
+        transform: scale(1);
+        transform: rotate(0deg);
+    }
+}
+.square1{
+    background: red;
+    height: 100px;
+    width:100px;
+    box-shadow: 10px 10px 10px, black;
+    border-radius: 50%;
+    animation: dd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes dd{
+    from {
+        background: white;
+
+    }
+    to{
+    background: linear-gradient(190deg,rgb(140, 245, 140),rgb(79, 225, 248),green);
+    }
+}
+.circle{
+    background:white;
+    height:40px;
+    width:40px;
+    border-radius: 50%;
+    animation: ddd;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes ddd{
+    from {
+        transform:  rotate(360deg) translate(140px);
+      }
+      to {
+        transform: rotate(0deg) translate(170px) ;
+}
+}
