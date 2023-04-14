@@ -45,10 +45,11 @@ animation-direction: right;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 225px;
 }
 .main{/*Adding linear gradient in background*/
     background:grey;
-    margin-top: 200px;
+    /* margin-top: 200px; */
     animation-name: demo_main;
 animation-iteration-count: infinite;
 animation-duration: 5s;
@@ -75,13 +76,11 @@ animation-direction: right;
 @keyframes demo3{
     from {
         background: red;
-        transform: scale(0.5);
-        transform: rotate(360deg);
+        transform: scale(0.5) rotate(360deg); /*transform is used only once. scale function in used to increase/decrease the size of OBJECT */
     }
     to{
         background:brown;
-        transform: scale(1);
-        transform: rotate(0deg);
+        transform: scale(1) rotate(0deg);
     }
 }
 .square1{
@@ -95,30 +94,98 @@ animation-direction: right;
     animation-iteration-count: infinite;
     position: relative;
 }
-@keyframes dd{
+/* @keyframes dd{
     from {
-        background: white;
+        background:green;
 
     }
     to{
     background: linear-gradient(190deg,rgb(140, 245, 140),rgb(79, 225, 248),green);
     }
-}
+} */
 .circle{
-    background:white;
+    background:black;
     height:40px;
     width:40px;
     border-radius: 50%;
     animation: ddd;
     animation-duration: 5s;
     animation-iteration-count: infinite;
+    position: relative;
+    
 
 }
 @keyframes ddd{
-    from {
-        transform:  rotate(360deg) translate(140px);
+    0% {
+        transform:  translateX(-200px); /*translate is used to move the object to the specific axis*/
+        position: relative;
+        z-index: -1;
+        
       }
-      to {
-        transform: rotate(0deg) translate(170px) ;
+      50% {
+        transform: translateX(0) ;
+        z-index: 999px;
 }
+100%{
+    transform: translateX(-250px) ;
+}
+}
+
+.Proper_animation{
+    background: cyan;
+    height: 100px;
+    width:100px;
+    border-radius: 50%;
+    margin-left: 5px;
+    animation: circleee;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+@keyframes circleee{
+    
+    0%
+    {
+background: red;
+transform: translateX(0px);
+    }
+    25%
+    {
+       background: green;
+       transform: translateX(-50px); 
+    }
+    50%
+    {
+        background: blue;
+        transform: translateX(-150px);
+
+    }
+    75%
+    {
+        background:yellow;
+        transform:translateX(-250px);
+        z-index: -1;
+    }
+    100%
+    {
+     background: black;
+     transform: translateX(0px);   
+    }
+}
+.square_anim_3{
+    background: mediumpurple;
+    height: 150px;
+    width:150px;
+    border-radius: 8px;
+    animation: demo1;
+    position: relative;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+@keyframes demo1{
+    from{
+        transform: rotateX(360deg);
+    }
+    to{
+        transform: rotateX(0deg);
+    }
 }
