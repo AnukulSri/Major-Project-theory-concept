@@ -1,0 +1,29 @@
+.container{
+    background-color: antiquewhite;
+}
+/* li{
+    display:inline-flex; 
+    margin-left: 5px;
+    font-size: 25px;    
+} */
+body{
+    background: linear-gradient(90deg,rgb(239, 180, 68),rgb(252, 234, 75));
+}
+.active{
+    background-color: rgb(239, 180, 68);
+}
+.banner { /* this is to aad background image */
+    background: url(..//images//back.jpg)no-repeat;
+    min-height: 700px;
+    background-size: cover;
+  }
+/* .drop{
+    display: inline;
+} */
+.drop2{
+    display:none;
+    
+}
+.drop:hover .drop2{
+    display: block;
+}
