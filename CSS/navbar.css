@@ -5,7 +5,7 @@
     display:inline-flex; 
     margin-left: 5px;
     font-size: 25px;    
-} */
+}  */
 body{
     background: linear-gradient(90deg,rgb(239, 180, 68),rgb(252, 234, 75));
 }
@@ -25,5 +25,5 @@ body{
     
 }
 .drop:hover .drop2{
-    display: block;
+    display:block;
 }
