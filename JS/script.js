@@ -26,6 +26,15 @@ var p1 = document.getElementById("p1")
 var p2 = document.getElementById("p2")
 var p3 = document.getElementById("p3")
 
-h[0].addEventListener("mouseup",(event)=>{
+d[0].addEventListener("mouseup",(event)=>{
     p1.style.color='orange'
 });
+
+d[1].addEventListener("mouseup",(event)=>{
+    p2.style.color = 'Green'
+});
+d[2].addEventListener("mouseup",(event)=>{
+    p3.style.color = 'Red'
+});
+
+
