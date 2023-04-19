@@ -22,3 +22,10 @@ d[1].style.fontSize = '32px'
 d[2].style.color = 'Red'
 d[2].style.fontSize = '32px'
 
+var p1 = document.getElementById("p1")
+var p2 = document.getElementById("p2")
+var p3 = document.getElementById("p3")
+
+h[0].addEventListener("mouseup",(event)=>{
+    p1.style.color='orange'
+});
