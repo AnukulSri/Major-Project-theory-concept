@@ -24,9 +24,25 @@ img{
     width: 320px;
     height: 320px;
     border: 1px solid black;
-    margin-top: 180px;
-    background: rgba(255, 255, 255, 0.5);
+    margin-top: 130px;
+    background: rgba(255, 255, 255, 0.2);
     border-radius: 8px;
     backdrop-filter: blur(50px);
 }
+#search_img{
+    display: block;
+    z-index: -1;
+    padding-left: 250px;
+    margin-top: -36px;
+    transition-duration: 1s;
+}
+#search{
+    margin-top: 120px;
+    border:none;
+    border-radius: 8px;
+    box-shadow: 0 10 0 0.4 black;
+    width:300px;
+    height: 40px;
+}
+
 
