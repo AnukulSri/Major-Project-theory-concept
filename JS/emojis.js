@@ -10,6 +10,7 @@ var a_img = document.getElementById('angry_img')
 
 h.addEventListener("mouseup", (event)=>{
     h_img.style.display = "block"
+    h_img.style.contentVisibility = 'visible'
     lv_img.style.display = 'none'
     l_img.style.display = 'none'
     a_img.style.display = 'none'
@@ -37,3 +38,12 @@ a.addEventListener("mouseup",(event)=>{
     l_img.style.display = 'none'
 
 })
+
+var s = document.getElementById('search')
+var p = document.getElementById('search_img')
+p.addEventListener('mousedown',(event)=>{
+    p.style.scale='0.5'
+});
+p.addEventListener('mouseup',(event)=>{
+    p.style.scale='1'
+});
