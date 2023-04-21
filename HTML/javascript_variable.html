@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Variable</title>
+</head>
+
+<body>
+    <h1>JS Variables</h1>
+    <h2>var, let, const</h2>
+    <h3>Functions</h3>
+    <h4>Normal and arrow function</h4>
+    <h5>if else</h5>
+</body>
+<script>
+    /**/
+    // var a = 10; 
+    // let b = 20;
+    // console.log(a + b);
+
+    // var a = 30;
+    // let b = 30; // var variable can't be redeclare
+    // console.log(a + b)
+
+    // const r = 20 // can't update
+    // console.log(r)
+    // r = 40 // const variable can't be reassign
+    // console.log(r)
+    // console.log(r + 10)
+
+
+
+    /*Function */
+
+
+
+    // function demo() {
+    //     console.log(50);
+    // }
+    // demo() //function call
+
+    // function demo1(a, b) {
+    //     console.log(a + b);
+    // }
+    // demo1(10, 20)
+
+    // var a = 40;
+    // var b = 20;
+    // function demo2() { // default function
+    //     console.log(a + b);
+    // }
+
+    // demo2(2, 4);
+
+    // function demo3() {
+    //     console.log(a + b);
+    // }
+    // demo3();
+
+    // var a = Number(prompt("Enter a number"))
+    // var c = Number(prompt("Enter a no."))
+    // function demo4(a, c) {
+    //     console.log(a + c)
+    // }
+    // demo4(a, c)
+
+
+    // function demo5(x, y) {
+    //     console.log(x + y)
+    // }
+    // for (i = 0; i < 5; i++) {
+    //     var a = Number(prompt("Enter a number"));
+    //     var c = Number(prompt("Enter a no."));
+    //     demo5(a, c);
+    // }
+
+
+    /*Printing a table using function and loop*/
+
+    // function table(z) {
+    //     for (i = 1; i <= 10; i++) {
+    //         console.log(z * i);
+    //     }
+    // }
+    // var o = Number(prompt("Enter a number"));
+    // table(o);
+
+
+
+
+    /* While Loop*/
+
+    // function next(d) {
+    //     i = 1
+    //     while (i <= 10) {
+    //         console.log(d * i);
+    //         i++;
+    //     }
+    // }
+    // f = Number(prompt("Enter a number"))
+    // next(f)
+
+
+    /*Do while loop*/
+    // a=0;
+    // do {
+    //     console.log(a);
+    //     a++;
+    // } while (a<=5);
+
+
+
+    // let l = [1, 2, 3, 4, 5,];
+    // s = l.length;
+    // i = 0;
+    // j = s - 1;
+    // while (i < j) {
+
+    //     l[i] = l[i] + l[j];
+    //     l[j] = l[i] - l[j];
+    //     l[i] = l[i] - l[j];
+
+    //     i = i + 1;
+    //     j = j - 1;
+    // }
+    // console.log(l)
+
+
+
+    let u = [1, 2, 3, 4, 5,];
+    s = u.length;
+    a=0
+    let w = Number(prompt("Enter a number"));
+    for (i = 0; i < s; i++) {
+        if (u[i] == w)
+        {
+            a=1;
+            break;
+        }
+    
+    }
+    if (a==1){
+        console.log("Number is present")
+    }
+    else{
+        console.log("number is not present")
+    }
+</script>
+
+</html>
