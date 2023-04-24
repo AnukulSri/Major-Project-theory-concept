@@ -7,11 +7,21 @@ but.addEventListener('mousedown',(event)=>{
 })
 but.addEventListener('mouseup',(event)=>{
     but.style.scale='0.8'
-    g.style.background='gray'
+    g.style.background='#454545'
     g.style.color='white'
-    document.getElementById('change').style.background='white'
-    document.getElementById('change').style.color='black'
-    document.getElementById("change").innerHTML = "Light Theme";
-    document.getElementById('change').style.transform = 'translateX(-80px)'
-})
 
+    but.style.background='white'
+    but.style.color='black'
+    but.innerHTML = "Light Theme"
+    but.style.transform = 'translateX(-80px)'
+})
+but.addEventListener('mousedown',(event)=>{
+    but.style.scale='0.8'
+    g.style.background='white'
+    g.style.color='black'
+
+    but.style.background='Black'
+    but.style.color='white'
+    but.innerHTML = "Dark Theme"
+    but.style.transform = 'translateX(80px)'
+})
