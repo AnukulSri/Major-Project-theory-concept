@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Binary Search</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    var n = Number(prompt("Enter a number to be searched"));
+     arr = [1, 2, 3, 4, 5, 6];
+     len = arr.length; //finding the length of array
+     li = 0; // lower limit index
+     hi = len-1; //upper limit index
+     mi = Math.floor((li + hi) / 2); // in this the middle index value of array is stored 
+    while (li<=hi)  
+    {
+        if (arr[mi] == n) {
+            console.log("Number is present in array");
+            break;
+        }
+        else if (arr[mi] < n) {
+            li = mi + 1;
+        }
+        else {
+            hi = mi - 1;
+        }
+        mi=(li+hi)/2;
+    }
+if (li>hi){
+    console.log("Number is not present");
+}
+</script>
+
+</html>
