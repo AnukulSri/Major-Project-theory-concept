@@ -1,37 +1,39 @@
-/* #demo {
-        justify-content: center;
-        align-items: center;
-        display: flex;
-        background: gray;
-        width: 300px;
-        height: 50px;
-        border-radius: 8px;
-    }
+#text {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: gray;
+    width: 50vw;/*vw means viewing width*/
+    height: 50px;
+    border-radius: 8px;
+    overflow: hidden;
+}
 
-    #clear {
-        background: red;
-        width: 70px;
-        height: 30px;
-        border-radius: 8px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    } */
+#clear {
+    background: orange;
+    width: 70px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:  10px 10px 10px rgb(150, 145, 145);
+}
 
-    #change {
-        height: 80px;
-        width: 80px;
-        border-radius: 50%;
-        background: black;
-        color: white;
-        box-shadow: 10px 10px 10px gray;
-        float: right;
-        margin-right: 30px;
-        margin-top: -40px;
-        transition-duration: 1s;
-    }
+#change {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background: black;
+    color: white;
+    box-shadow: 10px 10px 10px gray;
+    float: right;
+    margin-right: 30px;
+    margin-top: -40px;
+    transition-duration: 1s;
+}
 
-    #theme {
-        text-align: justify;
-        padding: 10vh;
-    }
+#theme {
+    text-align: justify;
+    padding: 10vh;
+}
