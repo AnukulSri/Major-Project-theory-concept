@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Changing</title>
+</head>
+<style>
+    #im2 {
+        display: none;
+    }
+</style>
+
+<body>
+    <center>
+        <h1>Image Changes</h1>
+        <hr>
+        <img id="im1"
+            src="https://img.freepik.com/premium-photo/red-apples-isolated-white-background-ripe-fresh-apples-clipping-path-apple-with-leaf_299651-595.jpg"
+            width="300px" alt="">
+        <img id="im2"
+            src="https://media.istockphoto.com/id/173242750/photo/banana-bunch.jpg?s=612x612&w=0&k=20&c=MAc8AXVz5KxwWeEmh75WwH6j_HouRczBFAhulLAtRUU="
+            width="300px" alt="">
+    </center>
+</body>
+
+<script>
+    var im = document.getElementById("im1")
+    var imm = document.getElementById("im2")
+    var a = 0
+    document.addEventListener("mouseup", (event) => {
+        if (a == 0) {
+            a = 1
+            imm.style.display = 'block'
+            im.style.display = 'none'
+        }
+        else {
+            a = 0
+            imm.style.display = 'none'
+            im.style.display = 'block'
+        }
+    })
+</script>
+
+</html>
