@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVERSING THE STRING</title>
+    <style>
+        /* h3 {
+            height: 20px;
+            width: 30px;
+        } */
+        body {
+            background: linear-gradient(90deg, orange, pink);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <center>
+        <input type="text" id="inp">
+        <br><br>
+        <button id="btn">Submit</button>
+        <h3 id="print"></h3>
+    </center> -->
+    <hr>
+    <center>
+        <input type="text" id="inp">
+        <br><br>
+        <button onclick="dispaly()">Submit</button>
+        <h3 id="p"></h3>
+    </center>
+</body>
+<script>
+    console.log("Reversing the String")
+    var b = prompt("Enter a string");
+    var c = " "
+    function rev(b) {
+        len = b.length;
+        for (i = len - 1; i >= 0; i--) {
+            c = c + b[i];
+        }
+        console.log(c)
+    }
+    rev(b)
+
+
+</script>
+
+<script>
+    console.log("Reversing the array")
+    arr = [1, 2, 3, 4, 5]
+    len = arr.length;
+    i = 0;
+    j = len - 1;
+
+    while (i < j) {
+        arr[i] = arr[i] + arr[j];
+        arr[j] = arr[i] - arr[j];
+        arr[i] = arr[i] - arr[j];
+
+        i = i + 1;
+        j = j - 1;
+
+    }
+    console.log(arr)
+</script>
+
+<script>
+    console.log
+    arr = ["Anukul", "Arpit", "Uzair", "Hemank", "Rachit sharma"]
+    len = arr.length
+    var ct = 0;
+    var bt;
+    for (i = 0; i < len; i++) {
+        bt = arr[i].length;
+
+        if (bt > ct) {
+            var btt = arr[i]
+        }
+        ct = bt;
+    }
+    console.log(btt)
+
+</script>
+
+
+<!-- <script>
+    var b = document.getElementById("btn")
+    b.addEventListener("mousedown", (event) => {
+        var d = document.getElementById("inp").value
+        var t = d
+        var c = document.getElementById("print")
+
+        c.innerHTML = "Hello " + t
+
+    })
+</script> -->
+
+<script>
+    function display() {
+        let r = document.getElementById("inp").value
+        document.getElementById("p").innerHTML = "Hello " + r
+    }
+</script>
+
+</html>
