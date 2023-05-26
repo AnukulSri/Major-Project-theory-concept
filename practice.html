@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    body {
+        background: linear-gradient(90deg, rgb(39, 180, 223), rgb(0, 128, 92));
+
+    }
+
+    h1 {
+        color: white;
+        background: linear-gradient(90deg, pink, rgb(114, 114, 236));
+
+    }
+
+    .main {
+        background-color: brown;
+        height: 150px;
+        width: 150px;
+        border-radius: 8px;
+    }
+
+    #part {
+        background: linear-gradient(90deg, orange, yellow);
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        box-shadow: 0 0 20px black;
+
+
+    }
+
+    #part:hover {
+        transition-duration: 6s;
+        scale: 1.5;
+        background: linear-gradient(90deg, red, blue);
+    }
+
+    .text {
+        background: greenyellow;
+        height: 100px;
+        width: 100px;
+        border-radius: 40px;
+        animation: demo;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+        z-index: -1;
+
+    }
+
+    @keyframes demo {
+        from {
+            background: greenyellow;
+            scale: 0.5;
+            transform: rotate(360deg);
+            z-index: -1;
+        }
+
+        to {
+            background: orchid;
+            scale: 1.5;
+            transform: rotate(120deg)
+        }
+    }
+
+    #ir {
+        background: linear-gradient(90deg, pink, purple);
+        padding: 10px;
+        font-size: 2em;
+        border-radius: 8px;
+        box-shadow: 0 15px 20px black;
+    }
+</style>
+
+<body>
+    <!-- <center>
+        <h1>Welcome</h1>
+        <h2 class="main"></h2>
+<br>
+        <div class="text"></div>
+        </center>
+        <p id="part"></p>
+
+<hr>
+<center>
+<h3 id="ir">Welcome to my Blog</h3>
+
+<h4 id="change">Aniruddh Srivastava</h4>
+    </center>
+
+<style>
+    #change{
+        font-size: 50px;
+        text-shadow: 0 0 5px orange;
+        animation:ch;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+    @keyframes ch{
+        from{
+            text-shadow: 0 0 5px orange;
+            color:white;
+        }
+        to{
+            text-shadow: 0 0 5px yellow,
+            0 0 10px rgb(189, 189, 9),
+            0 0 50px rgb(251, 251, 63);
+        color: white;
+        scale:1.5;
+
+        }
+    }
+</style>
+ -->
+    <style>
+        .container {
+            background: linear-gradient(90deg, pink, rgb(114, 114, 236));
+            justify-content: space-around;
+            display: flex;
+            border-radius: 8px;
+        }
+
+        #set {
+            width: 100px;
+            height: 40px;
+            padding-top: 10px;
+        }
+    </style>
+
+    <div class="container">
+        <img src="logo-v1.png" alt="" id="set">
+        <h3>Home</h3>
+        <h3>About</h3>
+        <h3>Services</h3>
+        <h3>Contact</h3>
+    </div>
+
+</body>
+
+</html>
