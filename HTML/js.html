@@ -13,44 +13,28 @@
         <h1>Beginning of JavaScript</h1>
     </center>
 </body>
+
 <script>
-    let a = Number(prompt("Enter number"));
-    let b = Number(prompt("Enter 2 number"));
-    let c = a + b;
-    console.log(c);
-    
-    if (a==1){
-console.log("ONE")
-    }
-   else if (a==2){
-console.log("TWO")
-    }
-   else if (a==3){
-console.log("THREE")
-    }
-   else if (a==4){
-console.log("FOUR")
-    }
-    else if (a==5){
-console.log("FIVE")
-    }
-   else {
-console.log("Invalid")
-}
+    let x = Math.floor(Math.random() * 10); // Generate a random number between 0 and 9
+    console.log(x);
 
-switch (a){
-    case 1:
-        console.log("ONE");
-        break;
-    case 2:
-        console.log("TWO")
-        break;
-    case 3:
-        console.log("Three")
-        default:
-            console.log("Invalid")
-}
+    let count = 3;
+    while (count > 0) {
+        let n = Number(prompt("Enter a number:"));
 
+        if (n === x) {
+            console.log("Congratulations! You guessed the right number.");
+            break; // End the game if the guess is correct
+        } else {
+            console.log("Oops, you didn't guess the correct number.");
+        }
+
+        count = count - 1;
+    }
+
+    if (count === 0) {
+        console.log("Game Over. The correct number was " + x);
+    }
 </script>
 
 </html>
